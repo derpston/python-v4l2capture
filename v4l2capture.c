@@ -907,6 +907,6 @@ PyMODINIT_FUNC PyInit_v4l2capture(void)
   Py_INCREF(&Video_device_type);
   PyModule_AddObject(module, "Video_device", (PyObject *)&Video_device_type);
 #if PY_MAJOR_VERSION >= 3
-  return NULL;
+  return module;
 #endif
 }
